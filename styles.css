@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    color: #ff6600;
+  }
+  
+  a:hover {
+    color: #cc5500;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* Estilos específicos para la página de inicio */
+  /* Encabezado */
+  #encabezado {
+    background-color: #ff6600;
+    padding: 20px 0;
+  }
+  
+  #encabezado a {
+    color: #fff;
+  }
+  
+  #encabezado a:hover {
+    color: #ccc;
+  }
+  
+  #encabezado .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  #encabezado .buscador {
+    margin-top: 10px;
+  }
+  
+  /* Carrusel */
+  #carrusel {
+    margin-top: 20px;
+  }
+  
+  #carrusel .carousel-item {
+    height: 400px;
+  }
+  
+  #carrusel img {
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  /* Sección de productos */
+  #productos {
+    margin-top: 20px;
+  }
+  
+  #productos h2 {
+    margin-bottom: 20px;
+  }
+  
+  #productos .producto {
+    margin-bottom: 20px;
+  }
+  
+  #productos .producto img {
+    max-width: 100%;
+  }
+  
+  #productos .producto h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #productos .producto p {
+    margin-bottom: 10px;
+  }
+  
+  #productos .producto .btn {
+    margin-top: 10px;
+  }
+  
+  /* Pie de página */
+  #pie {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+  }
+  
+  #pie h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #pie ul li {
+    margin-bottom: 5px;
+  }
+  
+  #pie ul li a {
+    color: #333;
+  }
+  
+  #pie ul li a:hover {
+    color: #ff6600;
+  }
+  
+  #pie form {
+    margin-top: 10px;
+  }
+  
+  #pie form input {
+    width: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    #encabezado .buscador {
+      margin-top: 10px;
+    }
+  
+    #productos .producto img {
+      max-width: 100%;
+    }
+  
+    #pie form input {
+      width: 100%;
+    }
+  }
+  
