@@ -1,0 +1,20 @@
+#CarruselMenu .text-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  z-index: 2;
+}
+
+#CarruselMenu .text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#CarruselMenu .text-container p {
+  font-size: 18px;
+  line-height: 1.5;
+}
