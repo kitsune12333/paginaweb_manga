@@ -58,18 +58,26 @@ body {
   }
   
   /* Carrusel */
-  #carrusel {
+
+  #carruselMenu{
     margin-top: 20px;
+    
+    
   }
-  
-  #carrusel .carousel-item {
-    height: 400px;
+
+  #carruselMenu .carousel-item{
+    height: 200px;
   }
-  
-  #carrusel img {
+
+  #carruselMenu .carousel-item img{
     object-fit: cover;
-    height: 400px;
+    height: 100px; /* Ajusta este valor según tus necesidades */
   }
+
+  img{
+    max-width: 60%;
+  }
+
   
   /* Sección de productos */
   #productos {
