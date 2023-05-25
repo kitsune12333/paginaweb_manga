@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Mangas</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="productos.css">
+</head>
+
+<body class="Fondo_catalogo">
+
+  <!-- Encabezado de la página -->
+  <!-- Navbar -->
+  <nav id="barra" class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="index.html"><img class="logo" src="img/tsudonkuLogo.png" alt="ml-auto"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formulario.html">Contacto</a>
+        </li>
+<<<<<<< HEAD
+        <li class="nav-item">
+          <a class="nav-link" href="carrito.html">Carro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ubicacion.html">Ubícanos</a>
+
+=======
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Catálogo de mangas -->
+  <section id="catalogo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center text-warning">Próximamente</h2>
+<<<<<<< HEAD
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p id="promocion-text">Tsundoku ofrece los mangas más emocionantes que pronto estarán disponibles para su compra.
+        Descubre nuevas
+        historias y personajes fascinantes y haz tu pedido ahora para ser uno de los primeros en disfrutar de estas
+        increíbles historias. Ofrecemos envío rápido y seguro para que puedas empezar a disfrutar de tus mangas lo antes
+        posible. ¡No te pierdas la oportunidad de elegir Tsundoku para tus compras de manga!</p>
+    </div>
+
+    <img id="luffyxikito" src="img/luffyxikito.png" alt="luffyxikito">
+    <img id="chopperxikito" src="img/chopper.png" alt="chopper">
+
+    <div class="container">
+      <div class="row">              <h1 classtext-centerle">Productos</h1>
+        <div class="col-md-3">
+            <div class="card">
+              <img src="img/MangaPunpun.webp" class="card-img-top" alt="MangaPP">
+              <div class="card-body">
+                <div class="producto" id="producto1">
+                  <h2>Producto 1</h2>
+                  <p>Precio: $5000</p>
+                  <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('producto1', 5000)">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>v>
+        <div class="col-md-3">
+            <div class="card">
+              <img src="img/MangaBerserk" class="card-img-top" alt="MangaBSK">
+              <div class="card-body">
+                <div class="producto" id="producto2">
+                  <h2>Producto 2</h2>
+                  <p>Precio: $10000</p>
+                  <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('producto2', 10000)">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>v>
+        <div class="col-md-3">
+            <div class="card">
+              <img src="img/MangaJJk.jpg" class="card-img-top" alt="MangaJJK">
+              <div class="card-body">
+                <div class="producto" id="producto3">
+                  <h2>Producto 3</h2>
+                  <p>Precio: $20000</p>
+                  <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('producto3', 20000)">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>c>
+        <div class="col-md-3">
+            <div class="card">
+              <img src="img/MangaOnePiece.jpg" class="card-img-top" alt="MangaOP">
+              <div class="card-body">
+                <div class="producto" id="producto4">
+                  <h2>Producto 4</h2>
+                  <p>Precio: $20000</p>
+                  <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('producto3', 30000)">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>c>
+        </di        <div class="row">
+              <div class="card text-center">
+                <h1 class="card-title">Carrito</h1>
+                <div class="card-body">
+                  <ul id="carrito" class="card-text">
+                  </ul>
+                  <p class="card-text" >Total: $<span id="total"></span></p>
+                  <button class="btn btn-primary" type="button" onclick="vaciarCarrito()">Vaciar carrito</button>
+                </div>
+              </div>
+            </div>   
+      </div>
+      <div class="row">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer class="bg-dark text-light">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="text-center" id="final2">Próxima tienda de mangas</p>
+          <p class="text-center"><i class="fa fa-map-marker"></i>Nos ubicamos en Portugal 667, wanoKuni</p>
+          <p class="text-center"><i class="fa fa-envelope"></i> Email: TsundokuStore@gmail.com</p>
+          <p class="text-center"><i class="fa fa-phone"></i> Fono: +56 9 3310 3456</p>
+          <p class="text-center"><img id="logoFinal" src="img/tsudonkuLogo.png" alt=""></p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-center">Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-center"><a href="index.html"><i class="fa fa-facebook"></i> Facebook</a></p>
+            </li>
+            <li>
+              <p class="text-center"><a href="index.html"><i class="fa fa-twitter"></i> Twitter</a></p>
+            </li>
+            <li>
+              <p class="text-center"><a href="index.html"><i class="fa fa-instagram"></i> Instagram</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-center">NOTICIAS</h5>
+          <p class="text-center">Suscríbete a nuestro boletín para recibir noticias y promociones.</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Correo electrónico">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Suscribirse</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+=======
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p id="promocion-text">Tsundoku ofrece los mangas más emocionantes que pronto estarán disponibles para su compra.
+        Descubre nuevas
+        historias y personajes fascinantes y haz tu pedido ahora para ser uno de los primeros en disfrutar de estas
+        increíbles historias. Ofrecemos envío rápido y seguro para que puedas empezar a disfrutar de tus mangas lo antes
+        posible. ¡No te pierdas la oportunidad de elegir Tsundoku para tus compras de manga!</p>
+    </div>
+
+    <img id="luffyxikito" src="img/luffyxikito.png" alt="luffyxikito">
+    <img id="chopperxikito" src="img/chopper.png" alt="chopper">
+
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img id="img" src="img/MangaPunpun.webp" class="card-img-top" alt="MangaPP" height="180" width="100">
+            <div class="card-body">
+              <h5 class="card-title">Oyasumi PunPun</h5>
+              <a href="#" class="btn btn-primary">Próximamente</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img id="img1" src="img/MangaBerserk" class="card-img-top" alt="MangaBSK" height="180" width="100">
+            <div class="card-body">
+              <h5 class="card-title"><br>Berserk</h5>
+              <a href="#" class="btn btn-primary">Próximamente</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="card">
+            <img id="img2" src="img/MangaJJk.jpg" class="card-img-top" alt="MangaJJK" height="180"
+              width="100">
+            <div class="card-body">
+              <h5 class="card-title text-white"><br>Jujutsu Kaisen</h5>
+              <a href="#" class="btn btn-primary">Próximamente</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img id="img3" src="img/MangaOnePiece.jpg" class="card-img-top" alt="MangaOP" height="180" width="100">
+            <div class="card-body">
+              <h5 class="card-title"><br>One Piece</h5>
+              <a href="#" class="btn btn-primary">Próximamente</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-light">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="text-center" id="final2">Próxima tienda de mangas</p>
+          <p class="text-center"><i class="fa fa-map-marker"></i>Nos ubicamos en Portugal 667, wanoKuni</p>
+          <p class="text-center"><i class="fa fa-envelope"></i> Email: TsundokuStore@gmail.com</p>
+          <p class="text-center"><i class="fa fa-phone"></i> Fono: +56 9 3310 3456</p>
+          <p class="text-center"><img id="logoFinal" src="img/tsudonkuLogo.png" alt=""></p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-center">Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-center"><a href="index.html"><i class="fa fa-facebook"></i> Facebook</a></p>
+            </li>
+            <li>
+              <p class="text-center"><a href="index.html"><i class="fa fa-twitter"></i> Twitter</a></p>
+            </li>
+            <li>
+              <p class="text-center"><a href="index.html"><i class="fa fa-instagram"></i> Instagram</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-center">NOTICIAS</h5>
+          <p class="text-center">Suscríbete a nuestro boletín para recibir noticias y promociones.</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Correo electrónico">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Suscribirse</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+      <hr>
+      <p class="text-center">© 2023 TsundokuStore. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Enlaces a los archivos JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+<<<<<<< HEAD
+  <script src="catalogo.js"></script>
+=======
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+</body>
+
+</html>

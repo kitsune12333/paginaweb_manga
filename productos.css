@@ -1,0 +1,139 @@
+<<<<<<< HEAD
+.card {
+  max-width: 90%;
+  padding: 7%;
+  align-items: center;
+  background-image: url(img/fondo.gif);
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 10%;
+  height: 9.5cm;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: rgba(0, 0, 255, 0.575);
+  padding: 1%;
+  margin-top: auto;
+  margin-bottom: 0.5cm;
+}
+
+
+
+h5 {
+  text-align: center;
+  color: aliceblue;
+  position: relative;
+}
+
+.Fondo_catalogo {
+=======
+.card{
+  max-width: 90%;
+  padding: 7%;
+  align-items: center;
+  background-image:url(img/fondo.gif);
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 10%;
+  height: 9cm;
+  position: relative;
+}
+
+
+
+h5{
+text-align: center;
+color: aliceblue;
+position: relative;
+}
+
+.Fondo_catalogo{
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+  background-color: rgba(75, 75, 75, 0.842);
+  position: relative;
+}
+
+<<<<<<< HEAD
+.btn {
+  background-color: rgba(0, 0, 255, 0.575);
+  padding: 1%;
+  margin-bottom: 10%;
+}
+
+h2 {
+  padding-top: 2%;
+}
+
+#promocion-text {
+=======
+
+
+.btn{
+  background-color: rgba(0, 0, 255, 0.575);
+  padding: 1%;
+}
+h2{
+  padding-top: 2%;
+}
+
+#promocion-text{
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+  padding-left: 2%;
+  padding-right: 2%;
+  font-style: oblique;
+  color: bisque;
+}
+
+<<<<<<< HEAD
+#luffyxikito {
+=======
+#luffyxikito{
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+  max-width: 15%;
+  position: absolute;
+  padding-top: 5%;
+  padding-left: 2%;
+}
+
+<<<<<<< HEAD
+#chopperxikito {
+=======
+#chopperxikito{
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+  max-width: 20%;
+  position: absolute;
+  right: 1%;
+  padding-top: 5%;
+<<<<<<< HEAD
+}
+
+.card-price {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.card-title{
+  margin: 1;
+}
+
+.card-title,
+.card-price {
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+=======
+}
+>>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
