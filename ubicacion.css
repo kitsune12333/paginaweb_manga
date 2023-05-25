@@ -1,0 +1,50 @@
+/* Set the size of the div element that contains the map */
+#map {
+    height: 600px; /* The height is 400 pixels */
+    width: 1000px; /* The width is the width of the web page */
+  }
+
+  
+  #barra{
+    background-color: rgba(2, 1, 10, 0.795);
+  }
+  .nav-link {
+    font-size: 25px;
+    
+  }
+  a    {
+    color:#ff6600; ;
+  }
+
+  #encabezado {
+    background-color: #92715a;
+    padding: 20px;
+  }
+  
+  #encabezado a {
+    color: #fff;
+  }
+  
+  #encabezado a:hover {
+    color: #ffffff;
+  }
+  
+  #encabezado .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  #encabezado .buscador {
+    margin-top: 10px;
+  }
+
+  
+  .logo{
+    margin-left: 1cm;
+    width: 35%;
+  }
+
+  #logoFinal{
+    max-width: 60%;
+  }
