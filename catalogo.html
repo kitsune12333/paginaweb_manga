@@ -17,7 +17,7 @@
 
   <!-- Encabezado de la página -->
   <!-- Navbar -->
-  <nav id="barra" class="navbar navbar-expand-lg ">
+  <nav id="barra" class="navbar navbar-expand-lg navbar  ">
     <a class="navbar-brand" href="index.html"><img class="logo" src="img/tsudonkuLogo.png" alt="ml-auto"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
 
         <li class="nav-item">
           <a class="nav-link" href="ubicacion.html">Ubícanos</a>
-
+        </li>
       </ul>
     </div>
   </nav>
@@ -48,7 +48,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center text-warning">Próximamente</h2>
+          <h2 id="titulopag" class="text-center text-warning">YA DISPONIBLE</h2>
         </div>
       </div>
     </div>
@@ -67,99 +67,87 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <div class="card">
+          <div class="card" id="carta">
             <img src="img/MangaPunpun.webp" class="card-img-top" alt="MangaPP">
             <div class="card-body">
-              <div class="producto" id="Oyasumi PunPun Vol.1">
+              <div class="producto" id="producto1">
                 <h5>OyasumiPunPun</h5>
                 <p>Precio: $5000</p>
-                <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('Oyasumi PunPun Vol.1', 5000)">Agregar al
-                  carrito</button>
+                <button class="btn btn-primary" type="button"
+                  onclick="agregarAlCarrito('Oyasumi PunPun Vol.1', 5000)">Agregar</button>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card">
+          <div class="card" id="carta">
             <img src="img/MangaBerserk" class="card-img-top" alt="MangaBSK">
             <div class="card-body">
-              <div class="producto" id="Berserk Vol.1">
-                <h5>Producto 2</h5>
+              <div class="producto" id="producto2">
+                <h5>Berserk</h5>
                 <p>Precio: $10000</p>
-                <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('Berserk Vol.1', 10000)">Agregar al
-                  carrito</button>
+                <button class="btn btn-primary" type="button"
+                  onclick="agregarAlCarrito('Berserk Vol.1', 10000)">Agregar</button>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card">
+          <div class="card" id="carta">
             <img src="img/MangaJJk.jpg" class="card-img-top" alt="MangaJJK">
             <div class="card-body">
-              <div class="producto" id="Jujutsu Kaisen Vol.4">
+              <div class="producto" id="producto3">
                 <h5>Jujutsu Kaisen</h5>
                 <p>Precio: $6000</p>
-                <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('Jujutsu Kaisen Vol.4', 6000)">Agregar al
-                  carrito</button>
+                <button class="btn btn-primary" type="button"
+                  onclick="agregarAlCarrito('Jujutsu Kaisen Vol.4', 6000)">Agregar</button>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card">
+          <div class="card" id="carta">
             <img src="img/MangaOnePiece.jpg" class="card-img-top" alt="MangaOP">
             <div class="card-body">
-              <div class="producto" id="One Piece Vol. 1">
+              <div class="producto" id="producto4">
                 <h5>One Piece</h5>
                 <p>Precio:$9900</p>
-                <button class="btn btn-primary" type="button" onclick="agregarAlCarrito('One Piece Vol. 1   ', 9900)">Agregar al
-                  carrito</button>
+                <button class="btn btn-primary" type="button"
+                  onclick="agregarAlCarrito('One Piece Vol. 1   ', 9900)">Agregar</button>
               </div>
             </div>
           </div>
         </div>
-        
+
       </div>
 
-      <div id="carrito" class="row">
-        <div class="card text-center">
-          <h1 class="card-title">Carrito</h1>
-          <div class="card-body">
-            <ul id="carrito" class="card-text">
-            </ul>
-            <p class="card-text">Total: $<span id="total"></span></p>
-            <button class="btn btn-primary" type="button" onclick="vaciarCarrito()">Vaciar carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          Launch demo modal
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+      <div id="cardCarrito">
+        <div id="carritoText" class="card mb-3 bg-dark">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/carritologo.png" alt="carrito" class="card-img">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-header">Carrito</h1>
+                <ul id="carrito" class="card-text text-light"></ul>
+                <p class="card-text text-warning">Total: $<span class="text-light" id="total"></span></p>
+                <div class="btn-group">
+                  <button class="btn btn-primary" type="button" onclick="vaciarCarrito()">Vaciar carrito</button>
+                  <button id="pagar" class="btn btn-primary mr-2" type="button" onclick="pagarCarrito()">Pagar
+                    Total</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+
+
+
+
+
 
   </section>
   <footer class="bg-dark text-light">
@@ -200,10 +188,16 @@
           </form>
         </div>
       </div>
-      <hr>
-      <p class="text-center">© 2023 TsundokuStore. Todos los derechos reservados.</p>
+      <div id="centrarPie">
+        <hr>
+        <p class="text-center">© 2023 TsundokuStore. Todos los derechos reservados.</p>
+        <a id="insignea" class="text-center" href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+          title="Explicación del Nivel Doble-A de Conformidad">
+          <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AA" alt="Icono de conformidad  Doble-A"></a>
+      </div>
     </div>
   </footer>
+  
   <!-- Enlaces a los archivos JavaScript de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -3,9 +3,10 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #000000d7;
     background-color: rgb(0, 0, 0);
   }
+
 #fondo{
   background-image: url("img/fondo.gif");
     background-size: cover;
@@ -18,14 +19,14 @@ body {
   }
 
   #barra{
-    background-color: rgba(2, 1, 10, 0.795);
+    background-color: rgb(2, 1, 10);
   }
 
   a {
     color: #ff6600;
   }
   
-  a:hover {
+  .a:hover {
     color: #ffffff;
   }
   
@@ -35,12 +36,12 @@ body {
     margin-bottom: 0.5rem;
   }
   
-  p {
+  .p {
     margin-top: 0;
     margin-bottom: 1rem;
   }
   
-  ul {
+  .ul {
     margin-top: 0;
     margin-bottom: 1rem;
     list-style: none;
@@ -133,6 +134,17 @@ body {
     width: auto;
   }
   
+  #centrarPie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #centrarPie img {
+    margin-top: 10px;
+  }
  
   
   /* formulario-------------------------------- */
@@ -191,7 +203,9 @@ body {
 
 
 
-
+#contenedor-tamaño label{
+  color: #ffffff;
+}
 
 
 

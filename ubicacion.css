@@ -2,11 +2,16 @@
 #map {
     height: 600px; /* The height is 400 pixels */
     width: 1000px; /* The width is the width of the web page */
+    text-align:right ;
   }
 
   
   #barra{
-    background-color: rgba(2, 1, 10, 0.795);
+    background-color: rgba(2, 1, 10, 0.937);
+  }
+
+  #Fondo_ubi{
+    background-color: rgba(75, 75, 75, 0.842);
   }
   .nav-link {
     font-size: 25px;
@@ -47,4 +52,24 @@
 
   #logoFinal{
     max-width: 60%;
+  }
+
+  /*pieeeeeeeeeeeeeeeeeeeeeee*/
+  #centrarPie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #centrarPie img {
+    margin-top: 10px;
+  }
+
+  #fotoubi img{
+    max-width: 100%;
+    margin-top: 3%;
+    position: relative;
+    padding-inline: 1%;
   }

@@ -17,7 +17,7 @@
 
   <!-- Encabezado de la página -->
   <!-- Navbar -->
-  <nav id="barra" class="navbar navbar-expand-lg ">
+  <nav id="barra" class="navbar navbar-expand-lg navbar">
     <a class="navbar-brand" href="index.html"><img class="logo" src="img/tsudonkuLogo.png" alt="ml-auto"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,17 +34,17 @@
         <li class="nav-item">
           <a class="nav-link" href="formulario.html">Contacto</a>
         </li>
-        
+
         <li class="nav-item">
           <a class="nav-link" href="ubicacion.html">Ubícanos</a>
-
+        </li>
       </ul>
     </div>
   </nav>
 
   <!-- Formulario -->
   <div id="texto_formulario">
-    <h1 class="text-warning">FORMULARIO DE DUDAS</h1>
+    <h1 class="text-center text-warning">FORMULARIO DE DUDAS</h1>
     <h3 id="idh3" class="text-center">¡Bienvenido a Tsudonku!</h3>
     <h5 id="idh5" class="text-justify">Nos encanta que estés interesado/a en nuestros mangas. Si tienes alguna duda o
       consulta,
@@ -59,18 +59,18 @@
         <div class="form-group">
           <label for="inputDireccion">Correo</label>
           <input type="text" class="form-control" id="inputDireccion" placeholder="xxxxx@gmail.com">
-          <div id="mensaje1" class="error">obligatorio</div>
+          
         </div>
         <div class="form-group">
           <label for="inputDireccion2">Descripción</label>
           <input type="text" class="form-control" id="inputDireccion2" placeholder="Escribe tus dudas...">
-          <div id="mensaje2" class="error">obligatorio</div>
+          
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">Ciudad</label>
             <input type="text" class="form-control" id="inputCity">
-            <div id="mensaje3" class="error">obligatorio</div>
+           
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">Region</label>
@@ -93,7 +93,7 @@
               <option>Región de Aysén</option>
               <option>Región de Magallanes</option>
             </select>
-            <div id="mensaje4" class="error">obligatorio</div>
+            
           </div>
         </div>
         <div class="form-group">
@@ -108,31 +108,7 @@
       </form>
     </div>
   </div>
-  <!-- Button trigger modal -->
-  <button id="datos" type="button" class="btn btn-primary" data-toggle="modal" data-target="datosFormulario" disabled>
-    mostrar datos
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="datosFormulario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <p>    </p>
   <!-- Pie de página -->
   <footer class="bg-dark text-light">
     <div class="container py-4">
@@ -171,8 +147,13 @@
           </form>
         </div>
       </div>
-      <hr>
-      <p class="text-center">© 2023 TsundokuStore. Todos los derechos reservados.</p>
+      <div id="centrarPie">
+        <hr>
+        <p class="text-center">© 2023 TsundokuStore. Todos los derechos reservados.</p>
+        <a id="insignea" class="text-center" href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+          title="Explicación del Nivel Doble-A de Conformidad">
+          <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AA" alt="Icono de conformidad  Doble-A"></a>
+      </div>
     </div>
   </footer>
   <!-- Enlaces a los archivos JavaScript de Bootstrap -->
