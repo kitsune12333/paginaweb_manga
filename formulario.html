@@ -10,41 +10,20 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="letras.css">
+  <link rel="stylesheet" href="productos.css">
 </head>
 
-<body id="fondo">
+<body class="Fondo_catalogo">
 
   <!-- Encabezado de la página -->
   <!-- Navbar -->
-  <nav id="barra" class="navbar navbar-expand-lg ">
+  <nav id="barra" class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="index.html"><img class="logo" src="img/tsudonkuLogo.png" alt="ml-auto"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-<<<<<<< HEAD
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link text-warning" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalogo.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="formulario.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="carrito.html">Carro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ubicacion.html">Ubícanos</a>
-          </li>
-        </ul>
-      </div>
-=======
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link text-warning" href="index.html">HOME</a>
@@ -55,13 +34,17 @@
         <li class="nav-item">
           <a class="nav-link" href="formulario.html">Contacto</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="ubicacion.html">Ubícanos</a>
+        </li>
       </ul>
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
     </div>
   </nav>
+
   <!-- Formulario -->
   <div id="texto_formulario">
-    <h1 class="text-warning">FORMULARIO DE DUDAS</h1>
+    <h1 class="text-center text-warning">FORMULARIO DE DUDAS</h1>
     <h3 id="idh3" class="text-center">¡Bienvenido a Tsudonku!</h3>
     <h5 id="idh5" class="text-justify">Nos encanta que estés interesado/a en nuestros mangas. Si tienes alguna duda o
       consulta,
@@ -72,35 +55,22 @@
   </div>
   <div id="contenedor-tamaño">
     <div id="contenedor_formulario" class="container">
-<<<<<<< HEAD
       <form id="formulario" class="col-md-4-center">
         <div class="form-group">
           <label for="inputDireccion">Correo</label>
           <input type="text" class="form-control" id="inputDireccion" placeholder="xxxxx@gmail.com">
-          <div id="mensaje1" class="error">obligatorio</div>
-=======
-      <form class="col-md-4-center">
-        <div class="form-group">
-          <label for="inputDireccion">Correo</label>
-          <input type="text" class="form-control" id="inputDireccion" placeholder="xxxxx@gmail.com">
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+          
         </div>
         <div class="form-group">
           <label for="inputDireccion2">Descripción</label>
           <input type="text" class="form-control" id="inputDireccion2" placeholder="Escribe tus dudas...">
-<<<<<<< HEAD
-          <div id="mensaje2" class="error">obligatorio</div>
-=======
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+          
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">Ciudad</label>
             <input type="text" class="form-control" id="inputCity">
-<<<<<<< HEAD
-            <div id="mensaje3" class="error">obligatorio</div>
-=======
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+           
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">Region</label>
@@ -123,10 +93,7 @@
               <option>Región de Aysén</option>
               <option>Región de Magallanes</option>
             </select>
-<<<<<<< HEAD
-            <div id="mensaje4" class="error">obligatorio</div>
-=======
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+            
           </div>
         </div>
         <div class="form-group">
@@ -137,52 +104,21 @@
             </label>
           </div>
         </div>
-<<<<<<< HEAD
         <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </div>
   </div>
-  <!-- Button trigger modal -->
-  <button id="datos" type="button" class="btn btn-primary" data-toggle="modal" data-target="datosFormulario" disabled>
-    mostrar datos
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="datosFormulario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-=======
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
-  </div>
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
+  <p>    </p>
   <!-- Pie de página -->
   <footer class="bg-dark text-light">
     <div class="container py-4">
       <div class="row">
         <div class="col-md-4">
-          <p class="text-center" id="final2">Próxima tienda de mangas</p>
-          <p class="text-center"><i class="fa fa-map-marker"></i>Nos ubicamos en Portugal 667, wanoKuni</p>
+          <p class="text-center"><img id="logoFinal" src="img/tsudonkuLogo.png" alt=""></p>
+          <p class="text-center"><i class="fa fa-map-marker"></i>Nos ubicamos en 467 Av. Valparaíso, Galería calle de Cristal</p>
           <p class="text-center"><i class="fa fa-envelope"></i> Email: TsundokuStore@gmail.com</p>
           <p class="text-center"><i class="fa fa-phone"></i> Fono: +56 9 3310 3456</p>
-          <p class="text-center"><img id="logoFinal" src="img/tsudonkuLogo.png" alt=""></p>
+          
         </div>
         <div class="col-md-4">
           <h5 class="text-center">Redes Sociales</h5>
@@ -211,15 +147,16 @@
           </form>
         </div>
       </div>
-      <hr>
-      <p class="text-center">© 2023 TsundokuStore. Todos los derechos reservados.</p>
+      <div id="centrarPie">
+        <hr>
+        <p class="text-center">© 2023 TsundokuStore. Todos los derechos reservados.</p>
+        <a id="insignea" class="text-center" href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+          title="Explicación del Nivel Doble-A de Conformidad">
+          <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AA" alt="Icono de conformidad  Doble-A"></a>
+      </div>
     </div>
   </footer>
   <!-- Enlaces a los archivos JavaScript de Bootstrap -->
-<<<<<<< HEAD
-
-=======
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -229,10 +166,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
-<<<<<<< HEAD
   <script src="formulario.js"></script>
-=======
->>>>>>> 29c49a0ed40496475e02c95dec603ad6850a9774
 </body>
 
 </html>

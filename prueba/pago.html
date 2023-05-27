@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Pago</title>
+</head>
+<body>
+  <h2>Página de Pago</h2>
+  <p>Monto a pagar: $<span id="montoAPagar"></span></p>
+
+  <script>
+    // Obtener el resultado del cálculo almacenado en localStorage
+    var monto = localStorage.getItem('monto');
+
+    // Mostrar el monto en la página de pago
+    document.getElementById('montoAPagar').textContent = monto;
+  </script>
+</body>
+</html>

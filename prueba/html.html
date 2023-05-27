@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Monto</title>
+</head>
+<body>
+  <h2>Calculadora de Monto</h2>
+  <form id="montoForm">
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" required>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" required>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <script>
+    document.getElementById('montoForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Obtener los valores ingresados por el usuario
+      var cantidad = document.getElementById('cantidad').value;
+      var precio = document.getElementById('precio').value;
+
+      // Realizar el cálculo del monto
+      var monto = cantidad * precio;
+
+      // Almacenar el resultado en localStorage
+      localStorage.setItem('monto', monto);
+
+      // Redirigir a la página de pago
+      window.location.href = 'compra.html';
+    });
+  </script>
+</body>
+</html>
+

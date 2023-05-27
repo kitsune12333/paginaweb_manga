@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+    position: initial;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000d7;
+    background-image: url(img/fondoCompra.jpg );
+    background-size: cover;
+    margin-top: 0;
+    
+}
+#datos{
+    margin-top: 4%;
+}
+
+#imgtransbank{
+    margin-top: 5%;
+}
+
+
+.logo {
+    margin-left: 1cm;
+    width: 35%;
+}
+#contenedorComp{
+    margin-top: 4%;
+}
+
+#barra {
+    background-color: rgb(2, 1, 10);
+}
+
+#titulo{
+    margin-top: 6%;
+}
+
+h1,
+h2,
+
+h6 {
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Estilos específicos para la página de inicio */
+/* Encabezado */
+.nav-link {
+    font-size: 25px;
+    
+}
+
+#encabezado {
+    background-color: #ff6600;
+    padding: 20px;
+}
+
+#encabezado a {
+    color: #fff;
+}
+
+#encabezado a:hover {
+    color: #ccc;
+}
+
+#encabezado .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#encabezado .buscador {
+    margin-top: 10px;
+}
+
+/* Carrusel */
+
+#CarruselMenu {
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.877);
+
+}
+
+#carruselMenu .carousel-item {
+    height: 200px;
+}
+
+#carruselMenu .carousel-item img {
+    object-fit: cover;
+    height: 100px;
+    /* Ajusta este valor según tus necesidades */
+}
+
+img {
+    max-width: 60%;
+}
+
+#bordepie{
+    margin-top: 3%;
+}
+
+
+/* Pie de página */
+#pie {
+    background-color: #614fffb0;
+    
+    
+    position: relative;
+}
+
+#pie h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#pie ul li {
+    margin-bottom: 5px;
+}
+
+#pie ul li a {
+    color: #333;
+}
+
+#pie ul li a:hover {
+    color: #ff6600;
+}
+
+
+
+#pie form input {
+    width: auto;
+}
+
+#centrarPie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#centrarPie img {
+    margin-top: 10px;
+}
+
+
+/* formulario-------------------------------- */
