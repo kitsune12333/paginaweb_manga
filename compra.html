@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario</title>
+  <title>Pago</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="productos.css">
+  <link rel="stylesheet" href="compra.css">
+
 </head>
 
 <body id="body">
 
   <!-- Encabezado de la página -->
   <!-- Navbar -->
-  <nav id="barra" class="navbar navbar-expand-lg navbar">
+  <nav id="barra" class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="index.html"><img class="logo" src="img/tsudonkuLogo.png" alt="ml-auto"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,143 +43,162 @@
   </nav>
 
   <!-- Formulario -->
-  
-      <div id="texto_formulario">
-        <h1 class="text-warning">Formulario de transaccion</h1>
-        <h3 id="idh3" class="text-center">Metodo de pago</h3>
-        <p>Monto a pagar: $<span id="montoAPagar"></span></p>
-      </div>
-      <div class="container text-center">
-      <div id="contenedor-tamaño">
-      
-      
-      <!-- Button trigger modal -->
-      <button id="datos" type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#Credito">
-        Credito
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="Credito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form class="was-validated">
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationServer01">Primer nombre</label>
-                        <input type="text" class="form-control is-valid" id="primerNombre" required>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label for="validationServer02">Segundo nombre</label>
-                        <input type="text" class="form-control is-valid" id="segundoNombre" required>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <label for="validationServer03">Número de tarjeta</label>
-                        <input type="text" class="form-control is-valid" id="numeroTarjeta" required>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <label for="validationServer04">correo</label>
-                      <input type="text" class="form-control is-valid" id="correo" required>
-                    </div>
-                    <div class="form-row">
-                      <div class="col-md-4 mb-3">
-                        <label for="validationServer05">cvv</label>
-                        <input type="text" class="form-control is-valid" id="cvv" required>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <label for="validationServer06">Año:</label>
-                        <input type="number" class="form-control is-valid" id="anio" placeholder="Ej. 2023" min="1900" max="2100">
-                        <label for="validationServer07">Mes:</label>
-                        <input type="number" class="form-control is-valid" id="mes" placeholder="Ej. 1" min="1" max="12">
-                      </div>
-                      <div class="col-md-2 mb-3">
-                        <label for="validationServer07">cuotas</label>
-                        <input type="number" class="form-control is-valid" id="cuotas" required>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
-                  </form>                  
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              
-            </div>
+
+
+  <div id="contenedorComp" class="row justify-content-md-center">
+    <div class="col-md-6">
+      <div class="card text-center rounded">
+        <div id="texto_formulario">
+          <h1  class="text-warning text">Formulario de transaccion</h1>
+
+          <h5 id="titulo" class="text-center text-dark">Monto a pagar: $<span id="montoAPagar"></span></h5>
+          <h3 id="idh3" class="text-center">Metodo de pago</h3>
+        </div>
+
+        <div class="container text-center">
+          <div id="contenedor-tamaño">
+
+
+            <!-- Button trigger modal -->
+            <button id="datos" type="button" class="btn btn-primary text-center" data-toggle="modal"
+              data-target="#Credito">
+              Credito
+            </button>
+            <button id="datos" type="button" class="btn btn-primary text-center" data-toggle="modal"
+              data-target="#Debito">
+              Debito
+            </button>
           </div>
         </div>
+        <div><img src="img/transbank.png" alt=""></div>
       </div>
-      <!-- Button trigger modal -->
-      <button id="datos" type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#Debito">
-        Debito
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="Debito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    </div>
+    
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Credito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pagar con credito</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="was-validated">
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label class="text-dark" for="validationServer01">Primer nombre</label>
+                <input type="text" class="form-control is-valid" id="primerNombre" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="text-dark"  for="validationServer02">Segundo nombre</label>
+                <input type="text" class="form-control is-valid" id="segundoNombre" required>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label  for="validationServer03">Número de tarjeta</label>
+                <input type="text" class="form-control is-valid" id="numeroTarjeta" required>
+              </div>
             </div>
-            <div class="modal-body">
-                <form class="was-validated">
-                    <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationServer01">Primer nombre</label>
-                        <input type="text" class="form-control is-valid" id="primerNombre" required>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label for="validationServer02">Segundo nombre</label>
-                        <input type="text" class="form-control is-valid" id="segundoNombre" required>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <label for="validationServer03">Número de tarjeta</label>
-                        <input type="text" class="form-control is-valid" id="numeroTarjeta" required>
-                      </div>
-                    </div>
-                      <div class="col-md-12 mb-3">
-                        <label for="validationServer04">correo</label>
-                        <input type="text" class="form-control is-valid" id="correo" required>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-md-4 mb-3">
-                          <label for="validationServer05">cvv</label>
-                          <input type="text" class="form-control is-valid" id="cvv" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                          <label for="validationServer06">fecha exp</label>
-                          <input type="text" class="form-control is-valid" id="fechex" required>
-                        </div>
-                      </div>
-                    
-                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
-                  </form>                  
+            <div class="col-md-12 mb-3">
+              <label for="validationServer04">correo</label>
+              <input type="text" class="form-control is-valid" id="correo" required>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationServer05">cvv</label>
+                <input type="text" class="form-control is-valid" id="cvv" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationServer06">Año:</label>
+                <input type="number" class="form-control is-valid" id="anio" placeholder="Ej. 2023" min="1900"
+                  max="2100">
+                <label for="validationServer07">Mes:</label>
+                <input type="number" class="form-control is-valid" id="mes" placeholder="Ej. 1" min="1" max="12">
+              </div>
+              <div class="col-md-2 mb-3">
+                <label for="validationServer07">cuotas</label>
+                <input type="number" class="form-control is-valid" id="cuotas" required>
+              </div>
             </div>
-          </div>
+            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
         </div>
       </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="Debito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="was-validated">
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationServer01">Primer nombre</label>
+                <input type="text" class="form-control is-valid" id="primerNombre" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationServer02">Segundo nombre</label>
+                <input type="text" class="form-control is-valid" id="segundoNombre" required>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="validationServer03">Número de tarjeta</label>
+                <input type="text" class="form-control is-valid" id="numeroTarjeta" required>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <label for="validationServer04">correo</label>
+              <input type="text" class="form-control is-valid" id="correo" required>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationServer05">cvv</label>
+                <input type="text" class="form-control is-valid" id="cvv" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationServer06">fecha exp</label>
+                <input type="text" class="form-control is-valid" id="fechex" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
       </div>
+    </div>
+  </div>
+  </div>
   </div>
   <!-- Pie de página -->
-  <footer class="bg-dark text-light">
+  <footer id="bordepie" class="bg-dark text-light">
     <div class="container py-4">
       <div class="row">
         <div class="col-md-4">
           <p class="text-center"><img id="logoFinal" src="img/tsudonkuLogo.png" alt=""></p>
-          <p class="text-center"><i class="fa fa-map-marker"></i>Nos ubicamos en 467 Av. Valparaíso, Galería calle de Cristal</p>
+          <p class="text-center"><i class="fa fa-map-marker"></i>Nos ubicamos en 467 Av. Valparaíso, Galería calle de
+            Cristal</p>
           <p class="text-center"><i class="fa fa-envelope"></i> Email: TsundokuStore@gmail.com</p>
           <p class="text-center"><i class="fa fa-phone"></i> Fono: +56 9 3310 3456</p>
-          
+
         </div>
         <div class="col-md-4">
           <h5 class="text-center">Redes Sociales</h5>
@@ -234,7 +253,7 @@
     // Mostrar el monto en la página de pago
     document.getElementById('montoAPagar').textContent = monto;
   </script>
-  
+
 </body>
 
 </html>
